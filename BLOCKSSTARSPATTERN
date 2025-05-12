@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+ int b,s,i,j,k;
+ printf("enter the blocks ");
+ scanf("%d",&b);
+ printf("enter the stars ");
+ scanf("%d",&s);
+ int c=0;
+ for(i=0;i<b;i++)
+ { 
+     c=0;
+     for(j=0;j<b-i;j++)
+     { printf("\n");
+         for(k=0;k<s;k++)
+        
+         printf(" * ");
+     
+     c=c+1;
+     }
+     printf ("\n _______");
+     printf("\n%d",c);
+ }
+    return 0;
+}
