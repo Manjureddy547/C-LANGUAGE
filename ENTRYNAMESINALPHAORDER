@@ -1,0 +1,73 @@
+
+#include <stdio.h>
+#include<string.h>
+
+void  main()
+{
+    int a;
+    printf(" enter the no of  names ");
+   scanf("%d",&a);
+   char name [a][12];
+   char temp[10];
+   printf ("enter the names");
+   for(int i=0;i<a;i++)
+    {
+        scanf("%s",name[i]);
+    }
+    for(int i=0;i<a-1;i++)
+    {
+        for(int j=0;j<a-i-1;j++)
+        {
+            if(strcmp(name[i],name[j])>0)
+            {
+                strcpy(temp,name[i]);
+                strcpy(name[i],name[j]);
+                strcpy(name[j],temp);
+                
+            }
+        }
+        
+    }
+    for (int i=0;i<a;i++)
+    {
+        printf("%d MR/MRS %s \n",(i+1),name[i]);
+    }
+    }
+
+
+#include <stdio.h>
+#include<string.h>
+
+void  main()
+{
+    int a;
+    printf(" enter the no of  names ");
+   scanf("%d",&a);
+   char name [a][12];
+   char temp[10];
+   printf ("enter the names");
+   for(int i=0;i<a;i++)
+    {
+        scanf("%s",name[i]);
+    }
+    for(int i=0;i<a-1;i++)
+    {
+        for(int j=0;j<a-i-1;j++)
+        {
+            if(strcmp(name[i],name[j])>0)
+            {
+                strcpy(temp,name[i]);
+                strcpy(name[i],name[j]);
+                strcpy(name[j],temp);
+                
+            }
+        }
+        
+    }
+    for (int i=0;i<a;i++)
+    {
+        printf("%d MR/MRS %s \n",(i+1),name[i]);
+    }
+    }
+
+
